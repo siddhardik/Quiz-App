@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App⏰</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="dubba">
+        <div class="cont_dubba">
+            
+            <div class="hp">
+                <section class="hp_header">
+                    <img src="https://image3.mouthshut.com/images/imagesp/925915639s.png" alt="Logo error" class="logo">
+                    <h1 class="hp_topic">Hello User!</h1>
+                    <h6 class="hp_info">Enter your name to continue the Quiz.</h6>
+                    <div class="user_details">
+                        <input type="text" placeholder="ENTER YOUR NAME HERE!" id="uName_input">
+                        <button id="uName_btn">Enter</button>
+                    </div>
+                </section>
+              
+                <section class="hp_footer">
+                    <h1>Select category!</h1>
+                    <div class="catogry">
+                        <button id="Chapter_Name1">Pipes and Cisterns</button>
+                        <button id="Chapter_Name2">Probability</button>
+                        <button id="Chapter_Name3">Problems on age</button>
+                        <button id="Chapter_Name4">Profit and loss</button>
+                    </div>
+                </section>
+                
+            </div>
+            
+            <div class="rules_pg">
+                <h2>Rules and regulation</h2>
+                
+                <ol>
+                    <li>In this Quiz app have total 10 Quetions</li>
+                    <li>Each quetion have 4 options & you should click your  choice</li>
+                    <li>Each Quetion have 10 seconds to answer.</li>
+                    <li>Reslut will show on the last page</li>
+                </ol>
+                <div class="rules_buttons">
+                    <button id="rules_back">Go back</button>
+                    <button id="rules_next">Start</button>
+                </div>
+            </div>
+            <!-- Rules pg ends here -->
+            <!-- Quiz pg starts here -->
+            <div class="quiz_pg">
+                <div class="quiz_header">
+                    <div class="quiz_header_topic">
+                        <h6 class="topic">Topic</h6>
+                    </div>
+                    <div class="time_and_scorecard">
+                        <p class="timer" id="timer">00</p>
+                        <p class="scoreboard">score:<span class="score">0</span></p>
+                    </div>
+                </div>
+                <div class="quiz_content">
+                    <div class="pagination">
+                        <p><span id="ques_num">1</span>/<span id="total_ques">10</span></p>
+                    </div>
+                    <div class="quiz_ques">
+                        <h3 id="ques">ques</h3>
+                    </div>
+                    <div class="quiz_options" >
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz_footer">
+                    <button id="next_ques">Next</button>
+                    <button id="goToResult" class="goToResults">Result</button>
+                </div>
+            </div> 
+            
+
+            <!-- Lets Code For Result Page  -->
+            <div class="result_pg">
+                <h1>Quiz Result</h1>
+                <p><span id="playerName">null</span> your result is</p>
+                <p>Total time taken <span id="timeTaken">null</span> seconds</p>
+                <p>Total question: <span id="tQ">null</span></p>
+                <p>Attempt: <span id="attempt">null</span></p>
+                <p>Correct: <span id="correct">null</span></p>
+                <p>Incorrect: <span id="inCorrect">null</span></p>
+                <p>Percentage: <span id="percentage">null</span></p>
+                <p id="blnt">Better Luck Next Time</p>
+                <div class="result_buttons">
+                    <button id="startAgain">Start Again</button>
+                    <button id="home">Go to home</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
